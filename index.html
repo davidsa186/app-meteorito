@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Meteorites</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon"  href="img/favicon.ico">
+
+        <script src="js/jquery-1.12.3.min.js"></script>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <script src="js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="css/datatables.min.css"/>
+
+        <script src="js/datatables.min.js"></script>
+
+        <!--https://data.nasa.gov/view/ak9y-cwf9--> 
+        
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-default navbar-fixed-top">				
+                <div class="navbar-header">                                     
+                    <a class="navbar-brand" href="#">Meteorites</a>
+                </div>                
+            </nav>       
+        
+            <div class="jumbotron">
+                <img src="img/icon_128.png" class="pull-left jumbotron-image">
+                <h2>Welcome to Meteorites</h2>
+                <p>You can see information about meteorite landings on Earth</p>                
+                 <p><a class="btn btn-primary btn-lg" target="_blank" href="https://data.nasa.gov/view/ak9y-cwf9" role="button">Learn more</a></p> 
+            </div>
+                        
+            <div id="details">
+                <h1>Meteorites</h1>
+                
+                <div class="form-inline">
+                    <div class="form-group">
+                        <label>Filter by year (leave empty to get all data)</label>
+                        <input type="number" class="form-control" id="text_year" placeholder="2016">
+                    </div>                
+                    <button type="submit" class="btn btn-success" id="btn_year">Go!</button>
+                    <span id="alert_year">Please insert a valid number!</span>
+                </div>
+                
+                <div id="table_div">
+                    <table id="meteorites" class="display" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Reclass</th>
+                                <th>Mass</th>
+                                <th>Fall</th>
+                                <th>Year</th>                   
+                                <th>Map</th>
+                            </tr>
+                        </thead>
+                    </table>    
+                </div>                            
+            </div>  
+            
+            <div id="loading">
+                 <img src="img/loading.gif" />
+            </div>          
+        </div>
+      
+        <script src="js/index.js"></script>
+    </body>
+</html>

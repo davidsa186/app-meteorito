@@ -1,0 +1,12 @@
+{
+  "name": "Meteorites",
+  "description": "Aplicación que muestra los meteoritos que han caído a la Tierra",
+  "version": "0.2",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": ["js/background.js"]
+    }
+  },
+  "icons": { "128": "img/icon_128.png"}
+}

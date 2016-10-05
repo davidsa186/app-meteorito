@@ -1,0 +1,26 @@
+.jumbotron-image {
+    margin-right: 30px;    
+}
+
+body { 
+    padding-top: 70px; 
+    margin-bottom: 30px;
+}
+
+#loading {
+    text-align: center;
+}
+
+.form-inline {
+    margin-bottom: 30px;
+}
+
+#alert_year {
+    font-weight: bold;
+    color: #B00000;
+}
+
+/* Para que sirva el scroll */
+html, body {
+    overflow-y: visible;
+}
